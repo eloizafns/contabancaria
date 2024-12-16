@@ -10,25 +10,13 @@ public abstract class Conta {
 	private String titular;
 	private float saldo;
 	
-	/*3 Modificadores de acesso (Determina quem pode acessar / encapsulamento)
-	 * Private - só os códigos daqui conseguem 
-	 * Protected - podem acessar no pacote
-	 * Public - qualquer classe pode acessar
-	 * */
-	
 	//Método Especial - Método construtor
 	public Conta(int numero, int agencia, int tipo, String titular, float saldo) {
-		//this => Classe Conta
-		//Conta.numero = atributo
-		//numero = 6
-		//this.numero = 6
-		
 		this.numero = numero;
 		this.agencia = agencia;
 		this.tipo = tipo;
 		this.titular = titular;
-		this.saldo = saldo;
-		
+		this.saldo = saldo;	
 	}
 	//Permite que a gente construa um método com valores pré determinados
 
@@ -114,9 +102,6 @@ public abstract class Conta {
 		System.out.println("Saldo: " + this.saldo);
 		
 	}
-	//Comportamentos/ Métodos
-	
-	//Métodos de acesso
 	
 
 }
